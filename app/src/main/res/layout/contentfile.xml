@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:id="@+id/photo"
+            android:src="@drawable/kuku"
+            android:scaleType="centerCrop"
+            />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/like"
+            android:layout_alignParentLeft="true"
+            android:background="#ff0000"
+            />
+        <TextView
+            android:layout_toRightOf="@+id/like"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/share"
+            android:text="1234"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+            />
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#0000ff"
+            android:id="@+id/share"/>
+
+</RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="gimkuku"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:id="@+id/user"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="she is so cute"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@+id/user"/>
+
+
+        </RelativeLayout>
+</LinearLayout>
